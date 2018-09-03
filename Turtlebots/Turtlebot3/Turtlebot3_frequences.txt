@@ -1,0 +1,66 @@
+valeur des frequences turtlebot3 >> rostopic hz
+
+scan 5hz
+imu 200 hz
+
+/camera/color/camera_info											30
+/camera/color/image_raw 											1.3
+/camera/color/image_raw/compressed									30
+/camera/color/image_raw/compressed/parameter_descriptions			--
+/camera/color/image_raw/compressed/parameter_updates				--
+/camera/color/image_raw/compressedDepth								--
+/camera/color/image_raw/compressedDepth/parameter_descriptions		--
+/camera/color/image_raw/compressedDepth/parameter_updates			--
+/camera/color/image_raw/theora										30
+/camera/color/image_raw/theora/parameter_descriptions				--
+/camera/color/image_raw/theora/parameter_updates					--
+/camera/depth/camera_info											60
+/camera/depth/image_raw												3.9
+/camera/depth/image_raw/compressed									30
+/camera/depth/image_raw/compressed/parameter_descriptions			--
+/camera/depth/image_raw/compressed/parameter_updates				--
+/camera/depth/image_raw/compressedDepth								11
+/camera/depth/image_raw/compressedDepth/parameter_descriptions		--
+/camera/depth/image_raw/compressedDepth/parameter_updates			--
+/camera/depth/image_raw/theora										--
+/camera/depth/image_raw/theora/parameter_descriptions				--
+/camera/depth/image_raw/theora/parameter_updates					--
+/camera/depth/points												--
+/camera/driver/parameter_descriptions								--
+/camera/driver/parameter_updates									--
+/camera/ir/camera_info												--
+/camera/ir/image_raw												--
+/camera/ir/image_raw/compressed										--
+/camera/ir/image_raw/compressed/parameter_descriptions				--
+/camera/ir/image_raw/compressed/parameter_updates					--
+/camera/ir/image_raw/compressedDepth								--
+/camera/ir/image_raw/compressedDepth/parameter_descriptions			--
+/camera/ir/image_raw/compressedDepth/parameter_updates				--
+/camera/ir/image_raw/theora											--
+/camera/ir/image_raw/theora/parameter_descriptions					--
+/camera/ir/image_raw/theora/parameter_updates						--
+/camera/ir2/camera_info												--
+/camera/ir2/image_raw												--
+/camera/ir2/image_raw/compressed									--
+/camera/ir2/image_raw/compressed/parameter_descriptions				--
+/camera/ir2/image_raw/compressed/parameter_updates					--
+/camera/ir2/image_raw/compressedDepth								--
+/camera/ir2/image_raw/compressedDepth/parameter_descriptions		--
+/camera/ir2/image_raw/compressedDepth/parameter_updates				--
+/camera/ir2/image_raw/theora										--
+/camera/ir2/image_raw/theora/parameter_descriptions					--
+/camera/ir2/image_raw/theora/parameter_updates						--
+/camera/nodelet_manager/bond										2
+/cmd_vel															10
+/cmd_vel_rc100														30
+/diagnostics														--
+/imu																200
+/joint_states														28.5
+/odom																28.5
+/rosout																--
+/rosout_agg															--
+/rpms																4.9
+/scan																4.9
+/sensor_state
+/tf																	223
+/tf_static															--
