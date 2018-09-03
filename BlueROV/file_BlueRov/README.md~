@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+# bluerov-ros-pkg
+
+A ROS package for the BlueROV and BlueROV compatible vehicles.
+
+## Documentation
+
+Documentation is available both [in this repository](docs/index.md) and on [Read The Docs](http://bluerov-ros-pkg.readthedocs.org/).
+=======
+# bluerov
+Control package for the bluerov
+>>>>>>> 87a7da8932bbe8d8967c9f7479c43d62042424c7

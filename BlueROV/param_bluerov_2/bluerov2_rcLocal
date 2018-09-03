@@ -1,0 +1,28 @@
+#!/bin/bash -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+exec 2> /tmp/rc.local.log
+source /opt/ros/kinetic/setup.bash
+source /home/ubuntu/catkin_ws/devel/setup.bash
+export ROS_IP=192.168.254.10
+sleep 1
+roscore &
+sleep 6
+roslaunch bluerov camera_rasp.launch &
+sleep 3
+roslaunch mavros px4.launch &
+sleep 3
+/home/ubuntu/catkin_ws/src/bluerov/launch/start_stream.sh
+sleep 1
+exit 0
+

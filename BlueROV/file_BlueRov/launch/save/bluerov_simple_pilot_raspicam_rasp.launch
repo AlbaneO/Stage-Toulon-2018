@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- roscore automatically started by roslaunch -->
+
+  <!-- start mavlink node -->
+  <include file="$(find bluerov)/launch/apm.launch" />
+
+  <!-- start pilot -->
+  <include file="$(find bluerov)/launch/simple_pilot.launch" />
+
+<!-- start raspicam -->
+  <include file="$(find bluerov)/launch/camera_rasp.launch" />
+
+</launch>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- gain override/cmd_vel-->
+  <arg name="gvx" default="400"/>
+  <arg name="gvy" default="1200"/>
+  <arg name="gvz" default="600"/>
+  <arg name="gwx" default="400"/>
+  <arg name="gwy" default="400"/>
+  <arg name="gwz" default="280"/>
+  <!-- simple_pilot -->
+  <node respawn="true" pkg="bluerov" type="simple_pilot" name="simple_pilot" output="screen"
+        args="$(arg gvx) $(arg gvy) $(arg gvz) $(arg gwx) $(arg gwy) $(arg gwz)" cwd="node"></node>
+</launch>

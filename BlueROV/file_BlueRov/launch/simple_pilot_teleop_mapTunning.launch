@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- roscore automatically started by roslaunch -->
+
+  <!-- start mavlink node -->
+  <!-- px4.launch already run by ROV -->
+  <!-- <include file="$(find bluerov)/launch/apm.launch" /> -->
+
+  <!-- start joy_node -->
+  <node respawn="true" pkg="joy" type="joy_node" name="joy_node" output="screen">
+    <param name="dev" value="/dev/input/js1" type="string"/>
+  </node>
+
+  <!-- start telexbox to convert joystick values into vel -->
+  <node pkg="bluerov" type="teleop_xbox" name="teleop_xbox" output="screen">
+  </node>
+  
+  <!-- gain override/cmd_vel-->
+  <arg name="gvx" default="400"/>
+  <arg name="gvy" default="1000"/>
+  <arg name="gvz" default="600"/>
+  <arg name="gwx" default="400"/>
+  <arg name="gwy" default="400"/>
+  <arg name="gwz" default="280"/>
+
+  <node respawn="true" pkg="bluerov" type="simple_pilot" name="simple_pilot" output="screen"
+        args="$(arg gvx) $(arg gvy) $(arg gvz) $(arg gwx) $(arg gwy) $(arg gwz)" cwd="node"></node>
+</launch>
